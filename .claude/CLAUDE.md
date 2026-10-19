@@ -113,5 +113,5 @@ Orden recomendado para construir el PETI desde cero: §2 alcance → §5 context
 - Para leer los anexos `.docx`/`.xlsx` y los PDF sin pelear con la codificación, usa `python .claude/skills/guia-peti/scripts/extraer_referencias.py <carpeta temporal>`; escribe texto plano.
 - Las rutas con tildes (el PDF de MinCiencias) fallan en `pdftotext` directo desde Bash; el script las resuelve.
 - Equipo de Raul (verificado el 29 de septiembre de 2026): Python 3.13.1; `python-docx` instalado con pip en esa fecha; `pdftotext` disponible en `/mingw64/bin` (Git Bash), así que `pypdf` no hace falta. `extraer_referencias.py` generó los 5 textos sin errores.
-- La carpeta del proyecto **no es un repositorio Git propio**: Git toma como raíz `C:\Users\Raul`, con otro remoto. Por decisión del usuario (29 de septiembre de 2026) se trabaja sin Git; no usar `/commit` hasta crear un repositorio propio con `git init` en la carpeta del proyecto.
+- La carpeta del proyecto es un repositorio Git propio desde el 19 de octubre de 2026 (rama `main`, remoto `https://github.com/Raulospp/credibanco.git`). El push lo hace el usuario desde la terminal: `.claude/settings.json` bloquea `git push` para Claude.
 - Los PDF de `docs/insumos/` se leen con `pdftotext -layout -enc UTF-8 <pdf> <txt>` a una carpeta temporal; sin `-enc UTF-8` las tildes salen dañadas en la consola.

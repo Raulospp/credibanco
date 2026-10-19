@@ -1,0 +1,14 @@
+# Insumos restringidos: se mantienen locales y nunca se versionan.
+/docs/privado/
+/docs/evidencia-privada/
+
+# Entregables firmados: llevan la firma del líder de equipo, no se publican en los remotos.
+/docs/Informe_uso_IA*.docx
+
+# Configuración local de Claude Code.
+.claude/settings.local.json
+
+# Artefactos locales de revisión y exportaciones temporales.
+*.tmp
+*.bak
+~$*
